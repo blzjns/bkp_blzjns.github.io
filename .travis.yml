@@ -1,4 +1,6 @@
 language: node_js # Node.js based project
+node_js:
+  - 15 # Level of Node.js to use
 cache:
   directories:
   - node_modules # Cache the node_modules folder for quicker build times
