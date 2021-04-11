@@ -36,7 +36,7 @@ export default function Layout(props: LayoutProps) {
             <Image
               priority
               id="home"
-              src="images/profile.jpg"
+              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -51,7 +51,7 @@ export default function Layout(props: LayoutProps) {
                 <Image
                   priority
                   id="not home"
-                  src="images/profile.jpg"
+                  src="../../images/profile.jpg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
