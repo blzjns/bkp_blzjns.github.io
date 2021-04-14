@@ -165,22 +165,10 @@ a.btn:hover {
 	height: inherit;
 	position: absolute;
 	left: 50%;
-	top: 25%;
+	top: 150px;
 	transform: translate(-50%, -50%);
 	border-radius: 5px;
 	overflow: hidden;
-}
-
-@media only screen and (min-width: 600px) {
-	.waveWrapper {
-		top: 18%;
-	}	
-}
-
-@media only screen and (min-width: 900px) {
-	.waveWrapper {
-		top: 25%;
-	}	
 }
 
 .lightWaveWrapper {
