@@ -38,7 +38,8 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
-    padding-top: unset;
+	padding-top: unset;
+	animation: fadein 2s;
 }
 
 .actions {

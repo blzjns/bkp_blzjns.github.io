@@ -110,7 +110,7 @@ class Layout extends React.Component<IProps, IState> {
 								' ' +
 								utilStyles[this.state.theme + 'Wave']
 							}
-							style={{ left: '10%', top: '-85%' }}></div>
+							style={{ left: '10%', top: '-100%' }}></div>
 						<div
 							className={
 								utilStyles.wave +
@@ -248,13 +248,12 @@ class Layout extends React.Component<IProps, IState> {
 							&nbsp;&nbsp;&nbsp;
 							<label
 								className={utilStyles.switch}
-								onMouseOver={async () => {
-									// await this.switchTheme();
-									await this.setState({ showWave: true });
-								}}
-								onMouseOut={async () => {
-									// await this.switchTheme();
-									await this.setState({ showWave: false });
+								onChange={async () => {
+									await this.setState({ showWave: !this.state.showWave });
+
+									setTimeout(() => {
+										this.setState({ showWave: false });
+									}, 5000);
 								}}>
 								<input
 									type="checkbox"
