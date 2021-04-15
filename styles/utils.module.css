@@ -171,20 +171,30 @@ a.btn:hover {
 	overflow: hidden;
 	-webkit-animation: fadeinout 5s;
 	animation: fadeinout 5s;
-	animation-duration: 5s;
-	/* animation-delay: 2s; */
 	opacity: 0;
 }
 
 @-webkit-keyframes fadeinout {
+	0% {
+		opacity: 0;
+	}
 	50% {
 		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
 
 @keyframes fadeinout {
+	0% {
+		opacity: 0;
+	}
 	50% {
 		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }
 

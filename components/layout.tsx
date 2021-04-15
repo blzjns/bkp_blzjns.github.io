@@ -42,7 +42,7 @@ class Layout extends React.Component<IProps, IState> {
 		this.state = {
 			theme: 'dark',
 			i18nLang: urlQueryParam('lang', 'en'),
-			showWave: false,
+			showWave: true,
 			expandedAvatar: false,
 		};
 
@@ -97,7 +97,8 @@ class Layout extends React.Component<IProps, IState> {
 							' ' +
 							utilStyles[this.state.theme + 'WaveWrapper']
 						}
-						style={{ display: !!this.state.showWave ? 'block' : 'none' }}>
+						style={{ display: !!this.state.showWave ? 'block' : 'none' }}
+						>
 						<div
 							className={
 								utilStyles.sun + ' ' + utilStyles[this.state.theme + 'Sun']
@@ -252,7 +253,7 @@ class Layout extends React.Component<IProps, IState> {
 									await this.setState({ showWave: !this.state.showWave });
 
 									setTimeout(() => {
-										this.setState({ showWave: false });
+										this.setState({ showWave: !this.state.showWave });
 									}, 5000);
 								}}>
 								<input
